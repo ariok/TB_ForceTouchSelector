@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TB_TouchForceSelector" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9X-Fq-EqU" customClass="ConfirmActionButton" customModule="TB_TouchForceSelector" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="507" width="320" height="61"/>
+                                <color key="backgroundColor" red="0.8980392157" green="0.27557501592716044" blue="0.30937230508765429" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="6og-vZ-3D2"/>
+                                </constraints>
+                                <state key="normal" title="DELETE EVENT">
+                                    <color key="titleColor" red="0.9658360481262207" green="0.98049330711364746" blue="0.98019146919250488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="delete" destination="BYZ-38-t0r" eventType="valueChanged" id="p0p-rs-NAo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breakfast with Jane" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5d-Hr-LaL">
+                                <rect key="frame" x="77" y="273" width="167" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.71100274599012336" green="0.85098039219999999" blue="0.51838249482345677" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:30 AM tomorrow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TvB-F1-tci">
+                                <rect key="frame" x="95" y="297" width="130" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="Jane" translatesAutoresizingMaskIntoConstraints="NO" id="DeP-cz-QzR">
+                                <rect key="frame" x="85.5" y="93" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="H0I-7D-LBz"/>
+                                    <constraint firstAttribute="height" constant="150" id="feg-fx-SVm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@ Pancakes Paradise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDA-NH-Mnf">
+                                <rect key="frame" x="87" y="323" width="146" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.59275546395705525" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DELETED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijO-zZ-tud">
+                                <rect key="frame" x="125.5" y="351" width="70" height="26"/>
+                                <color key="backgroundColor" red="0.92675858736038208" green="0.36772662401199341" blue="0.38047230243682861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="3Ct-pz-sQO"/>
+                                    <constraint firstAttribute="width" constant="70" id="Ud0-6N-Y4Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="1" green="0.98431372549999996" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14509803921568626" green="0.14509803921568626" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TvB-F1-tci" firstAttribute="top" secondItem="a5d-Hr-LaL" secondAttribute="bottom" constant="1" id="6hD-S4-nUu"/>
+                            <constraint firstItem="a5d-Hr-LaL" firstAttribute="top" secondItem="DeP-cz-QzR" secondAttribute="bottom" constant="30" id="Hy2-dI-4eE"/>
+                            <constraint firstItem="ijO-zZ-tud" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TOm-By-4ya"/>
+                            <constraint firstItem="DeP-cz-QzR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="awJ-h6-S1A"/>
+                            <constraint firstItem="lDA-NH-Mnf" firstAttribute="top" secondItem="TvB-F1-tci" secondAttribute="bottom" constant="9" id="bj5-q4-dlA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="j9X-Fq-EqU" secondAttribute="bottom" id="cmP-yg-4Hp"/>
+                            <constraint firstItem="a5d-Hr-LaL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dcz-C3-wDc"/>
+                            <constraint firstItem="j9X-Fq-EqU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iSX-Xy-2Y5"/>
+                            <constraint firstItem="a5d-Hr-LaL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iaz-cY-uDA"/>
+                            <constraint firstAttribute="trailing" secondItem="j9X-Fq-EqU" secondAttribute="trailing" id="pJ4-1L-XVQ"/>
+                            <constraint firstItem="TvB-F1-tci" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pLB-lU-9XE"/>
+                            <constraint firstItem="lDA-NH-Mnf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="paP-UN-dCj"/>
+                            <constraint firstItem="ijO-zZ-tud" firstAttribute="top" secondItem="lDA-NH-Mnf" secondAttribute="bottom" constant="10" id="raf-8a-W2q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="deletedLabel" destination="ijO-zZ-tud" id="Y7d-cy-yE8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="286.875" y="257.74647887323943"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Jane" width="280" height="280"/>
+    </resources>
+</document>
